@@ -1,20 +1,17 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import Primeiro from './components/Primeiro';
-// import Segundo from './components/Segundo';
+
+import Family from './ex9_ex10/Family';
+import Member from './ex9_ex10/Member';
+
+
+
 
 ReactDOM.render(
-  //ou pode usar a funcção feita, que seria o comment Primeiro() do Primeiro.jsx
-  <>
-  {/* fragment  */}
-    <Primeiro value="1º"/>
-    <Primeiro value="2º"/>
-    <hr/>
-
-
-    {/* <Segundo/>
-    <hr/> */}
-  </>
-  ,
+  <Family>
+        <Member name='Matheus' lastName='Costa'/>
+        <Member name='Stef' lastName='Gab'/>
+        <Member name='Kleyd' lastName='Bar'/>
+  </Family>,
    document.getElementById('root')
 );
